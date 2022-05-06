@@ -8,7 +8,7 @@ HEALTHCHECK --interval=30s --timeout=3s --retries=5 --start-period=10s \
 RUN apt-get update && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/* && \
-    apk del iputils apk-tools alpine-keys libc-utils wget bash && \
+    apk del iputils apk-tools alpine-keys libc-utils wget bash
     
     # Remove apk-tools entirely and every related files
-    rm -rf /var/cache/apk /lib/apk /etc/apk
+    #rm -rf /var/cache/apk /lib/apk /etc/apk
