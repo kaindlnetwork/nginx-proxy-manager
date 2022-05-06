@@ -10,4 +10,4 @@ HEALTHCHECK --interval=30s --timeout=3s --retries=5 --start-period=10s \
 RUN apt-get update && \
     apt-get upgrade -y
 #RUN apt purge curl* bash apt* -y --allow-remove-essentia
-RUN rm -rf /var/lib/apt/ /usr/share/doc/apt /var/cache/apt/ /etc/apt/ /usr/lib/apt/ /home /media /root /bin /usr/games
+#RUN rm -rf /var/lib/apt/ /usr/share/doc/apt /var/cache/apt/ /etc/apt/ /usr/lib/apt/ /home /media /root /bin /usr/games
