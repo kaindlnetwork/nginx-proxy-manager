@@ -6,6 +6,6 @@ HEALTHCHECK --interval=30s --timeout=3s --retries=5 --start-period=10s \
   CMD /bin/check-health
   
 RUN apt-get update && \
-    apt-get upgrade -y && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get upgrade -y
 RUN apt purge curl apt* -y
+RUN rm -rf /var/lib/apt/
